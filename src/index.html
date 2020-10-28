@@ -4,62 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacq Babb Bookmarks App</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="src/index.css">
 </head>
 
 
 <body>
+
+<!--Header-->
     <header>
         <h1>Bookmarks</h1>
     </header>
     
     <main>
-        <section id='addNew'></section>
+
+<!--addNew form-->
         <form>
             <h2>Add New Bookmark</h2>
-            <label for='title'>*Title:</label>
-            <input type='text' class='title' name='title' required>
-            <label for='url'>*URL:</label>
-            <input type='text' class='url' name='url' required>
-            <label for='descrip'>Description:</label>
-            <input type='text' class='descrip' name='descrip'>
-            <label for='rating'>Rating:</label>
-            <select id='rating' class='rating' name='rating'>
-                <option value='none'>Please select:</option>
-                <option value='5'>⭐⭐⭐⭐⭐</option>
-                <option value='4'>⭐⭐⭐⭐</option>
-                <option value='3'>⭐⭐⭐</option>
-                <option value='2'>⭐⭐</option>
-                <option value='1'>⭐</option>
+            <fieldset>
+                <label for='title'>*Title:</label>
+                <input type='text' class='title input' name='title' required>
+                <label for='url'>*URL:</label>
+                <input type='url' class='url input' name='url' required>
+                <label for='descrip'>Description:</label>
+                <input type='text' class='descrip input' name='descrip'>
+                <label for='rating'>Rating:</label>
+                <select id='rating' class='rating input' name='rating'>
+                    <option value='none'>Please select:</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
+                </select>
+            </fieldset>
         </form>
 
-        <section>
-            <ul class='bookmarkList'>
-                <li class='bookmark'>
-                    <div class='bookmark-title'>Thinkful</div>
-                    <div class='bookmark-url'>http://thinkful.com/</div>
-                    <input type='text' class='descrip'>
-                    <select id='rating' class='rating' name='rating'>
-                        <option value='none'>Please select:</option>
-                        <option value='5'>⭐⭐⭐⭐⭐</option>
-                        <option value='4'>⭐⭐⭐⭐</option>
-                        <option value='3'>⭐⭐⭐</option>
-                        <option value='2'>⭐⭐</option>
-                        <option value='1'>⭐</option>
-                </li>
-            </ul>
-        </section>
+        <h3>Saved Bookmarks</h3>
+        <ul>
+            <li class='item-element'>
+                <!--value populated from input-->
+                <input type='url' class='title input' name='title' required>
+                <!--clickable url link, or hover button w/ link 'visit site'-->
+                <input type='text' class='url input' name='url' required>
+                <!--value populated from input-->
+                <input type='text' class='descrip input' name='descrip'>
+                <!--option selection from input-->
+                <select id='rating' class='rating input' name='rating'>
+                    <option value='none'>No Rating</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
+                </select>
+                <button class='remove input'>
+                    <span class='button-label'>remove</span>
+                </button>
+            </li>
+            <li class='item-element'>
+                <!--value populated from input-->
+                <input type='url' class='title input' name='title' required>
+                <!--clickable url link, or hover button w/ link 'visit site'-->
+                <input type='text' class='url input' name='url' required>
+                <!--value populated from input-->
+                <input type='text' class='descrip input' name='descrip'>
+                <!--option selection from input-->
+                <select id='rating' class='rating input' name='rating'>
+                    <option value='none'>No Rating</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
+                </select>
+                <button class='remove input'>
+                    <span class='button-label'>remove</span>
+                </button>
+            </li>
+            <li class='item-element'>
+                <!--value populated from input-->
+                <input type='url' class='title input' name='title' required>
+                <!--clickable url link, or hover button w/ link 'visit site'-->
+                <input type='text' class='url input' name='url' required>
+                <!--value populated from input-->
+                <input type='text' class='descrip input' name='descrip'>
+                <!--option selection from input-->
+                <select id='rating' class='rating input' name='rating'>
+                    <option value='none'>No Rating</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
+                </select>
+                <button class='remove input'>
+                    <span class='button-label'>remove</span>
+                </button>
+            </li>
+                </ul>       
+<!--Bookmark list-->        
+
+       
 
 
     </main>
 
-    
-    <script 
-        src="https://code.jquery.com/jquery-3.5.1.js" 
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
-        crossorigin="anonymous">
-    </script>
-    <script src='index.js'></script>
+
 </body>
 </html>
 
