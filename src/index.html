@@ -36,18 +36,22 @@
                     <option value='2'>⭐⭐</option>
                     <option value='1'>⭐</option>
                 </select>
+                <button type='submit'>
+                    <span class='button-label'>submit</span>
+                </button>
             </fieldset>
         </form>
 
         <h3>Saved Bookmarks</h3>
         <ul>
+            <!--minimized example-->
             <li class='item-element'>
                 <!--value populated from input-->
                 <input type='url' class='title input' name='title' required>
                 <!--clickable url link, or hover button w/ link 'visit site'-->
-                <input type='text' class='url input' name='url' required>
+                <input type='url' class='url input hidden' name='url' required>
                 <!--value populated from input-->
-                <input type='text' class='descrip input' name='descrip'>
+                <input type='text' class='descrip input hidden' name='descrip'>
                 <!--option selection from input-->
                 <select id='rating' class='rating input' name='rating'>
                     <option value='none'>No Rating</option>
@@ -57,15 +61,22 @@
                     <option value='2'>⭐⭐</option>
                     <option value='1'>⭐</option>
                 </select>
+                <button class='expand input'>
+                    <span class='button-label'>expand</span>
+                </button>
+                <button class='minimize input hidden'>
+                    <span class='button-label'>minimize</span>
+                </button>                
                 <button class='remove input'>
                     <span class='button-label'>remove</span>
                 </button>
             </li>
+            <!--expanded example-->
             <li class='item-element'>
                 <!--value populated from input-->
                 <input type='url' class='title input' name='title' required>
                 <!--clickable url link, or hover button w/ link 'visit site'-->
-                <input type='text' class='url input' name='url' required>
+                <input type='url' class='url input' name='url' required>
                 <!--value populated from input-->
                 <input type='text' class='descrip input' name='descrip'>
                 <!--option selection from input-->
@@ -77,26 +88,12 @@
                     <option value='2'>⭐⭐</option>
                     <option value='1'>⭐</option>
                 </select>
-                <button class='remove input'>
-                    <span class='button-label'>remove</span>
+                <button class='expand input hidden'>
+                    <span class='button-label'>expand</span>
                 </button>
-            </li>
-            <li class='item-element'>
-                <!--value populated from input-->
-                <input type='url' class='title input' name='title' required>
-                <!--clickable url link, or hover button w/ link 'visit site'-->
-                <input type='text' class='url input' name='url' required>
-                <!--value populated from input-->
-                <input type='text' class='descrip input' name='descrip'>
-                <!--option selection from input-->
-                <select id='rating' class='rating input' name='rating'>
-                    <option value='none'>No Rating</option>
-                    <option value='5'>⭐⭐⭐⭐⭐</option>
-                    <option value='4'>⭐⭐⭐⭐</option>
-                    <option value='3'>⭐⭐⭐</option>
-                    <option value='2'>⭐⭐</option>
-                    <option value='1'>⭐</option>
-                </select>
+                <button class='minimize input'>
+                    <span class='button-label'>minimize</span>
+                </button>                
                 <button class='remove input'>
                     <span class='button-label'>remove</span>
                 </button>
