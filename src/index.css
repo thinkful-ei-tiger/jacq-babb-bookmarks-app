@@ -1,17 +1,42 @@
 body {
     font-family: 'Courier New', Courier, monospace;
+    margin: 50px;
 }
 
+
+ul {
+    margin:0;
+    padding:0;
+}
 li {
     list-style: none;
     margin: 20px;
     border: 2px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
-.input {
+.item {
     margin: 10px;
+}
+
+.new-bookmark, .item-element {
+    display: flex;
+    flex-direction: column;
 }
 
 .hidden {
     display: none;
+}
+
+.link {
+    display:none;
+}
+
+.url-link {
+    display: inline-block;
+}
+
+.url-link:hover .link {
+    display: inline-flex;
 }
