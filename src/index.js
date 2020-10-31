@@ -42,7 +42,7 @@ const postToApi = function (newBookmark) {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: apiBookmark
+      body: (apiBookmark)
     });
   };
 
