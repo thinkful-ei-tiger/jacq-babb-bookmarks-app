@@ -18,20 +18,19 @@
     <main>
 
 <!--addNew form-->
-        <button class='add-new''>
+        <button class='show-add-new''>
             <span class='button-label'>add new</span>
         </button>
-        <form class='new-bookmark'>
+        <form id='addNew'>
             <fieldset >
                 <label for='title'>*Title:</label>
-                <input type='text' class='title input' name='title' required>
+                <input type='text' class='title input' name='title'>
                 <label for='url'>*URL:</label>
-                <input type='url' class='url input' name='url' required>
+                <input type='url' class='url input' name='url'>
                 <label for='descrip'>Description:</label>
-                <input type='text' class='descrip input' name='descrip'>
+                <textarea class='descrip input' name='descrip'></textarea>
                 <label for='rating'>Rating:</label>
                 <select id='rating-input' class='rating input' name='rating'>
-                    <option value='none'>Please select:</option>
                     <option value='5'>⭐⭐⭐⭐⭐</option>
                     <option value='4'>⭐⭐⭐⭐</option>
                     <option value='3'>⭐⭐⭐</option>
@@ -53,12 +52,11 @@
             <p>click to expand and edit</p>
             <label for='rating'>Filter results by minimum rating:</label>
             <select id='rating-filter' class='rating input' name='rating'>
-                <option value='none'>All</option>
                 <option value='5'>⭐⭐⭐⭐⭐</option>
                 <option value='4'>⭐⭐⭐⭐+</option>
                 <option value='3'>⭐⭐⭐+</option>
                 <option value='2'>⭐⭐+</option>
-                <option value='1'>⭐+</option>
+                <option value='1'>All</option>
                 </select>
         <ul>
             <!--minimized example-->
@@ -73,12 +71,11 @@
                 <!--option selection from input-->
                 <label for='rating' class='item'>Pull Rating From Object (static)</label>
                 <select class='rating input item hidden' name='rating'>
-                    <option value='none'>No Rating</option>
-                    <option value='⭐⭐⭐⭐⭐'>⭐⭐⭐⭐⭐</option>
-                    <option value='⭐⭐⭐⭐'>⭐⭐⭐⭐</option>
-                    <option value='⭐⭐⭐'>⭐⭐⭐</option>
-                    <option value='⭐⭐'>⭐⭐</option>
-                    <option value='⭐'>⭐</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
                 </select>
                 <button class='remove input hidden item'>
                     <span class='button-label'>remove</span>
@@ -102,12 +99,11 @@
          
                 <!--option selection from input-->
                 <select class='rating input item' name='rating'>
-                    <option value='none'>No Rating</option>
-                    <option value='⭐⭐⭐⭐⭐'>⭐⭐⭐⭐⭐</option>
-                    <option value='⭐⭐⭐⭐'>⭐⭐⭐⭐</option>
-                    <option value='⭐⭐⭐'>⭐⭐⭐</option>
-                    <option value='⭐⭐'>⭐⭐</option>
-                    <option value='⭐'>⭐</option>
+                    <option value='5'>⭐⭐⭐⭐⭐</option>
+                    <option value='4'>⭐⭐⭐⭐</option>
+                    <option value='3'>⭐⭐⭐</option>
+                    <option value='2'>⭐⭐</option>
+                    <option value='1'>⭐</option>
                 </select>
                 <button class='remove input item'>
                     <span class='button-label'>remove</span>
